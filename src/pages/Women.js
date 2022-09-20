@@ -1,6 +1,8 @@
+import classes from "./Women.module.css"
+
 function Women(){
     return(
-        <div>
+        <div className={classes.main_div}>
             Women
         </div>
     )

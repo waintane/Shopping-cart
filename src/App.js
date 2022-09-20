@@ -5,6 +5,7 @@ import Navigation from "./components/Navigation";
 import Accueil from "./pages/Accueil";
 import Men from "./pages/Men"
 import Women from "./pages/Women"
+import "./App.css";
 
 function App() {
   return (
