@@ -2,10 +2,10 @@ import ShoppingCard from "./ShoppingCard";
 import data from "../DataBase/Data.json";
 import classes from "./CardList.module.css";
 
-function CardList(){
+function CardList(props){
     return(
         <div className={classes.card_list_container}>
-            {data.map(data => <ShoppingCard
+            {props.dataFiltre.map(data => <ShoppingCard
             key={data.id}
             img={data.img}
             name={data.name}
