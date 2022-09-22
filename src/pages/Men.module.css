@@ -1,0 +1,11 @@
+.main_men{
+    margin-left: 20px;
+}
+.produits_homme{
+    width: 1000%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x:scroll;
+    position: relative;
+}

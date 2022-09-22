@@ -1,3 +1,4 @@
+import CardList from "../components/CardList";
 import ShoppingCard from "../components/ShoppingCard";
 import classes from "./Accueil.module.css"
 
@@ -6,9 +7,7 @@ function Accueil(){
         <div className={classes.main_accueil}>
             <h2>Mens best seller</h2>
             <div className={classes.men_best_seller_container}>
-                <ShoppingCard></ShoppingCard>
-                <ShoppingCard></ShoppingCard>
-                <ShoppingCard></ShoppingCard>
+                <CardList></CardList>
             </div>
         </div>
     )

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "genre": "homme",
+        "img": "https://cdn.shopify.com/s/files/1/1368/3463/products/WHITE-CREW-CURVE-HEM4825_350x_crop_center@2x.progressive.jpg?v=1603323882",
+        "name": "t-shirt blanc",
+        "price": 59.19
+    },
+    {
+        "id": 2,
+        "genre": "homme",
+        "img": "https://cdn.shopify.com/s/files/1/1368/3463/products/HEATHERGREYHOODIECLASSIC1_350x_crop_center@2x.progressive.jpg?v=1629128813",
+        "name": "t-shirt noir",
+        "price": 50.19
+    },
+    {
+        "id": 3,
+        "genre": "homme",
+        "img": "https://cdn.shopify.com/s/files/1/1368/3463/products/WHITE-CREW-CURVE-HEM4825_350x_crop_center@2x.progressive.jpg?v=1603323882",
+        "name": "t-shirt blanc",
+        "price": 59.19
+    }
+]
