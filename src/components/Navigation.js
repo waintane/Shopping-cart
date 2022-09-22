@@ -5,13 +5,13 @@ import imgHeader from "../img/img-header.jpg";
 function Navigation(){
     let menuState = false;
     
-    function deployMenu(){
-        const menu = document.querySelector("div nav");  
+    function deployMenu(){  
+        const menu = document.querySelector("div nav");
         if (menuState === false){      
-            menu.style.transform = "translateX(0%)"
+            menu.style.transform = "translateX(0%)";
             menuState = true;
         }else{
-            menu.style.transform = "translateX(-100%)"
+            menu.style.transform = "translateX(-100%)";
             menuState = false;
         }
     }
@@ -28,18 +28,19 @@ function Navigation(){
                         <Link to="/">Acceuil</Link>
                     </li>
                     <li>
-                        <Link to="/Men-page">Men</Link>
+                        <Link to="/Men-page">Homme</Link>
                     </li>
                     <li>
-                        <Link to="/Women-page">Women</Link>
+                        <Link to="/Women-page">Femme</Link>
                     </li>
                 </ul>
             </nav>
             <div className={classes.img_header}>
-                <img src={imgHeader} alt="jeune femme"></img>
+                <img className={classes.imgHeader} src={imgHeader} alt="jeune femme"></img>
                 <h2>Workleisure Apparel for the Modern Professional</h2>
             </div>
         </div>
+        
     )
 }
 export default Navigation;

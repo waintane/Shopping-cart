@@ -20,6 +20,7 @@ a{
     display: flex;
     position: fixed;
     top: 0px;
+    left: 0px;
     right: 0px;
     width: 100vw;
     height: 50px;
@@ -37,6 +38,7 @@ nav{
     position: fixed;
     top: 51px;
     right: 0px;
+    left: 0px;
     width: 100vw;
     transform: translateX(-100%);
     transition: 0.5s;
@@ -47,9 +49,9 @@ nav{
     text-align: right;
 }
 
-img{
-    overflow-x: hidden;
-    width: 100%;
+.imgHeader{
+    transform: translateX(-18%);
+    width: 150%;
     height: auto;
 }
 .img_header h2{
@@ -66,6 +68,11 @@ img{
 }
 
 @media only screen and (min-width: 800px) {
+    .imgHeader{
+        width: 100%;
+        transform: translateX(0%);
+    }
+
     .burger{
         display: none;
     }

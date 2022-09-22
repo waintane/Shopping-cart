@@ -1,0 +1,25 @@
+.card_container img{
+    width: clamp(200px, 100%, 500px);
+    height: auto;
+}
+.card_container{
+    width: clamp(250px, 20vw, 400px);
+    margin-right: 20px;
+    overflow-x: hidden;
+    position: static;
+}
+.item_name{
+    font-weight:bold;
+}
+.add_to_cart{
+    height: 30px;
+    text-align: center;
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+.add_to_cart:active{
+    background-color: black;
+}
+.item_price{
+    padding: 5px 0px;
+}

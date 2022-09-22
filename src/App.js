@@ -8,8 +8,14 @@ import Women from "./pages/Women"
 import "./App.css";
 
 function App() {
+    var scrollEventHandler = function()
+  {
+    window.scroll(0, window.pageYOffset)
+  }
+
+  window.addEventListener("scroll", scrollEventHandler, false);
   return (
-    <div className="App">
+    <div className="app">
       <header>
         <Navigation></Navigation>
       </header>
