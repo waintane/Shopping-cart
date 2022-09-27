@@ -4,6 +4,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     overflow-x:hidden;
+    overflow-y:hidden;
     position: relative;
 }
 .main_accueil{
@@ -11,13 +12,37 @@
 }
 body::-webkit-scrollbar {
     width: 8px;             
-  }
+}
   
-  body::-webkit-scrollbar-track {
-    background: rgb(255, 255, 255);
-  }
+body::-webkit-scrollbar-track {
+background: rgb(255, 255, 255);
+}
   
-  body::-webkit-scrollbar-thumb {
-    background-color: rgb(139, 139, 139);
-    border: 3px solid rgb(139, 139, 139);  
-  }
+body::-webkit-scrollbar-thumb {
+background-color: rgb(139, 139, 139);
+border: 3px solid rgb(139, 139, 139);  
+}
+.container_carousel button{
+height: 50px;
+position:absolute;
+transform: translateY(clamp(150px, 10vw, 350px));
+z-index: 20;
+}
+.container_carousel div{
+    transition: 0.5s;
+}
+.container_carousel button:nth-of-type(2){
+height: 50px;
+position:absolute;
+left: 89vw;
+transform: translateY(clamp(150px, 10vw, 350px));
+z-index: 20;
+}
+
+
+
+@media only screen and (min-width: 800px){
+    .container_carousel button:nth-of-type(2){
+      left: 95vw;
+    }
+}

@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import classes from "./Navigation.module.css"
 import imgHeader from "../img/img-header.jpg";
 
+/* use state sur le bouton burger */
+
 function Navigation(){
     let menuState = false;
     
@@ -25,7 +27,7 @@ function Navigation(){
             <nav className={classes.menu}>
                 <ul>
                     <li>
-                        <Link to="/">Acceuil</Link>
+                        <Link to="/">Accueil</Link>
                     </li>
                     <li>
                         <Link to="/Men-page">Homme</Link>

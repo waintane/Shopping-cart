@@ -22,5 +22,37 @@
         "img": "https://cdn.shopify.com/s/files/1/1368/3463/products/WHITE-CREW-CURVE-HEM4825_350x_crop_center@2x.progressive.jpg?v=1603323882",
         "name": "t-shirt blanc",
         "price": 59.19
+    },
+    {
+        "id": 4,
+        "vente": "high",
+        "genre": "homme",
+        "img": "https://cdn.shopify.com/s/files/1/1368/3463/products/BLACK-LEGACY-BOMBER_350x_crop_center@2x.progressive.jpg?v=1663344870",
+        "name": "veste noir",
+        "price": 59.19
+    },
+    {
+        "id": 5,
+        "vente": "high",
+        "genre": "homme",
+        "img": "https://cdn.shopify.com/s/files/1/1368/3463/products/SLATE-FLEECE-BACK-_recolored_350x_crop_center@2x.progressive.jpg?v=1662864499",
+        "name": "Veste verte",
+        "price": 20.50
+    },
+    {
+        "id": 6,
+        "vente": "high",
+        "genre": "homme",
+        "img": "https://cdn.shopify.com/s/files/1/1368/3463/products/TEAKWOOD-VINTAGE-HOODIE-W-CHENILLE-C-X_350x_crop_center@2x.progressive.jpg?v=1659035005",
+        "name": "Hoodie brun",
+        "price": 70.30
+    },
+    {
+        "id": 7,
+        "vente": "high",
+        "genre": "femme",
+        "img": "https://cdn.shopify.com/s/files/1/1368/3463/products/BLACK-LEGACY-BOMBER_350x_crop_center@2x.progressive.jpg?v=1663344870",
+        "name": "veste noir",
+        "price": 59.19
     }
 ]
