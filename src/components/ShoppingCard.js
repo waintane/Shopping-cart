@@ -6,7 +6,7 @@ function ShoppingCard(props){
             <img src={props.img} alt="vetement"></img>
             <p className={classes.item_name}>{props.name}</p>
             <div>
-                <p className={classes.item_price}>{props.price}</p>
+                <p className={classes.item_price}>${props.price}</p>
                 <div className={classes.add_to_cart}>Ajouter</div>
             </div>
         </div>

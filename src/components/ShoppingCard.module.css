@@ -6,6 +6,7 @@
     width: clamp(250px, 20vw, 400px);
     margin-right: 20px;
     overflow-x: hidden;
+    overflow-y: hidden;
     position: static;
 }
 .item_name{
@@ -18,7 +19,12 @@
     color: white;
 }
 .add_to_cart:active{
-    background-color: black;
+    transition: 0.2s;
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+.add_to_cart:hover{
+    cursor: pointer;
 }
 .item_price{
     padding: 5px 0px;
