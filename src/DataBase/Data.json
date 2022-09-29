@@ -74,8 +74,8 @@
     {
         "id": 10,
         "vente": "high",
-        "genre": "homme",
-        "img": "https://cdn.shopify.com/s/files/1/1368/3463/products/BLACK-LEGACY-BOMBER_350x_crop_center@2x.progressive.jpg?v=1663344870",
+        "genre": "femme",
+        "img": "https://cdn.shopify.com/s/files/1/1368/3463/products/PUTTY-BOXY-CREW-NECK_350x_crop_center@2x.progressive.jpg?v=1662571634",
         "name": "veste noir",
         "price": 59.19
     },
@@ -90,8 +90,8 @@
     {
         "id": 12,
         "vente": "high",
-        "genre": "homme",
-        "img": "https://cdn.shopify.com/s/files/1/1368/3463/products/TEAKWOOD-VINTAGE-HOODIE-W-CHENILLE-C-X_350x_crop_center@2x.progressive.jpg?v=1659035005",
+        "genre": "femme",
+        "img": "https://cdn.shopify.com/s/files/1/1368/3463/products/WHITE-TOMBOY-TEE_350x_crop_center@2x.progressive.jpg?v=1650153617",
         "name": "Hoodie brun",
         "price": 70.30
     },
