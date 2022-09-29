@@ -16,9 +16,9 @@ function Accueil(){
 
             <div className={classes.men_best_seller_container}>
                 <div className={classes.container_carousel}>
-                    <button data-mssg={moveCarouselHomme} onClick={slideGauche}>g</button>
-                    <button data-mssg={moveCarouselHomme} onClick={slideDroite}>d</button>
-                    <div className="affichage_offre">
+                    <button data-value={moveCarouselHomme} data-container={".affichage_offre_homme"} onClick={slideGauche}>g</button>
+                    <button data-value={moveCarouselHomme} data-container={".affichage_offre_homme"} onClick={slideDroite}>d</button>
+                    <div className="affichage_offre_homme">
                     <CardList dataFiltre={dataHommeVendeur}></CardList>
                     </div>
                 </div>
@@ -28,9 +28,9 @@ function Accueil(){
 
             <div className={classes.men_best_seller_container}>
                 <div className={classes.container_carousel}>
-                    <button data-mssg={moveCarouselFemme} onClick={slideGauche}>g</button>
-                    <button data-mssg={moveCarouselFemme} onClick={slideDroite}>d</button>
-                    <div className="affichage_offre">
+                    <button data-value={moveCarouselFemme} data-container={".affichage_offre_femme"} onClick={slideGauche}>g</button>
+                    <button data-value={moveCarouselFemme} data-container={".affichage_offre_femme"} onClick={slideDroite}>d</button>
+                    <div className="affichage_offre_femme">
                     <CardList dataFiltre={dataFemmeVendeur}></CardList>
                     </div>
                 </div>
