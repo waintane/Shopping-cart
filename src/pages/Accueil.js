@@ -19,8 +19,22 @@ function Accueil(){
             </div>
             <div className={classes.men_best_seller_container}>
                 <div className={classes.container_carousel}>
-                    <button data-value={moveCarouselHomme} data-container={".affichage_offre_homme"} onClick={slideGauche}>g</button>
-                    <button data-value={moveCarouselHomme} data-container={".affichage_offre_homme"} data-length={dataHommeVendeur.length} onClick={slideDroite}>d</button>
+
+                    <button 
+                    data-value={moveCarouselHomme}
+                    data-container={".affichage_offre_homme"}
+                    onClick={slideGauche}>
+                    {"<"} 
+                    </button>
+
+                    <button 
+                    data-value={moveCarouselHomme}
+                    data-container={".affichage_offre_homme"}
+                    data-length={dataHommeVendeur.length} 
+                    onClick={slideDroite}>
+                    {">"} 
+                    </button>
+
                     <div className="affichage_offre_homme">
                     <CardList dataFiltre={dataHommeVendeur}></CardList>
                     </div>
@@ -33,8 +47,22 @@ function Accueil(){
             </div>
             <div className={classes.men_best_seller_container}>
                 <div className={classes.container_carousel}>
-                    <button data-value={moveCarouselFemme} data-container={".affichage_offre_femme"} onClick={slideGauche}>g</button>
-                    <button data-value={moveCarouselFemme} data-container={".affichage_offre_femme"} data-length={dataFemmeVendeur.length} onClick={slideDroite}>d</button>
+
+                    <button
+                    data-value={moveCarouselFemme} 
+                    data-container={".affichage_offre_femme"} 
+                    onClick={slideGauche}> 
+                    {"<"} 
+                    </button>
+
+                    <button 
+                    data-value={moveCarouselFemme} 
+                    data-container={".affichage_offre_femme"} 
+                    data-length={dataFemmeVendeur.length} 
+                    onClick={slideDroite}> 
+                    {">"} 
+                    </button>
+                    
                     <div className="affichage_offre_femme">
                     <CardList dataFiltre={dataFemmeVendeur}></CardList>
                     </div>

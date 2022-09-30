@@ -1,5 +1,5 @@
 .men_best_seller_container{
-    width: 100%;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -8,7 +8,8 @@
     position: relative;
 }
 .main_accueil{
-    margin-left: 20px;
+    margin: 0px auto;
+    width: 95%;
 }
 body::-webkit-scrollbar {
     width: 8px;             
@@ -23,21 +24,26 @@ background-color: rgb(139, 139, 139);
 border: 3px solid rgb(139, 139, 139);  
 }
 .container_carousel button{
-height: 50px;
+color: white;
+background-color: black;
+height: 30px;
+width: 30px;
+border-radius: 100%;
 position:absolute;
+transform: translateY(clamp(150px, 10vw, 350px));
+z-index: 5;
+}
+.container_carousel button:nth-of-type(2){
+height: 30px;
+position:absolute;
+left: 92%;
 transform: translateY(clamp(150px, 10vw, 350px));
 z-index: 5;
 }
 .container_carousel div{
     transition: 0.5s;
 }
-.container_carousel button:nth-of-type(2){
-height: 50px;
-position:absolute;
-left: 89vw;
-transform: translateY(clamp(150px, 10vw, 350px));
-z-index: 20;
-}
+
 
 
 
@@ -45,4 +51,21 @@ z-index: 20;
     .container_carousel button:nth-of-type(2){
       left: 95vw;
     }
+    .container_carousel button{
+        color: white;
+        background-color: black;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        position:absolute;
+        transform: translateY(clamp(150px, 10vw, 350px));
+        z-index: 5;
+        }
+        .container_carousel button:nth-of-type(2){
+        height: 50px;
+        position:absolute;
+        left: 95%;
+        transform: translateY(clamp(150px, 10vw, 350px));
+        z-index: 5;
+        }
 }
