@@ -5,7 +5,7 @@ function Footer(){
         <div className={classes.footer}>
             <div>
                 <ul>
-                    <li>Ⓒ Tout droit réservé à Olivier Paradis-Tardif</li>
+                    <li>Ⓒ Tout droit réservé à Olivier Paradis-Tardif / photo importé du site cuts</li>
                 </ul>
             </div>
         </div>

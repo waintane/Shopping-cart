@@ -5,6 +5,7 @@ import imgHeader from "../img/img-header.jpg";
 /* use state sur le bouton burger */
 
 function Navigation(){
+    let page = "Accueil"
     let menuState = false;
     
     function deployMenu(){  
@@ -17,6 +18,13 @@ function Navigation(){
             menuState = false;
         }
     }
+    window.addEventListener("resize", ()=>{
+        if(window.innerWidth > 799){
+            menuState = false;
+            deployMenu();
+        }
+    })
+
     return(
         <div className={classes.header}>
             <div className={classes.header_fixed}>
@@ -41,6 +49,7 @@ function Navigation(){
             </div>
             <div className={classes.img_header}>
                 <img className={classes.imgHeader} src={imgHeader} alt="jeune femme"></img>
+                <h3>{page}</h3>
                 <h2>Workleisure Apparel for the Modern Professional</h2>
             </div>
         </div>

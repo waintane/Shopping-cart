@@ -174,5 +174,21 @@
         "img": "https://cdn.shopify.com/s/files/1/1368/3463/products/WHITE-CREW-CURVE-HEM4825_350x_crop_center@2x.progressive.jpg?v=1603323882",
         "name": "t-shirt blanc",
         "price": 59.19
+    },
+    {
+        "id": 23,
+        "vente": "high",
+        "genre": "homme",
+        "img": "https://cdn.shopify.com/s/files/1/1368/3463/products/BLACK-LEGACY-BOMBER_350x_crop_center@2x.progressive.jpg?v=1663344870",
+        "name": "veste noir",
+        "price": 59.19
+    },
+    {
+        "id": 24,
+        "vente": "high",
+        "genre": "femme",
+        "img": "https://cdn.shopify.com/s/files/1/1368/3463/products/SLATE-FLEECE-BACK-_recolored_350x_crop_center@2x.progressive.jpg?v=1662864499",
+        "name": "Veste verte",
+        "price": 20.50
     }
 ]

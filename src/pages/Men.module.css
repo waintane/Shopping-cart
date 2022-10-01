@@ -1,5 +1,5 @@
 .main_men{
-    margin-left: 20px;
+    margin: 0px 20px;
 }
 .produits_homme{
     width: 100%;
@@ -8,4 +8,7 @@
     flex-wrap: wrap;
     overflow-x:hidden;
     position: relative;
+}
+.produits_homme div{
+    flex-wrap: wrap;
 }

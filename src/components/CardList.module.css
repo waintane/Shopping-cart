@@ -1,8 +1,8 @@
 .card_list_container{
-    width: 1000%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     overflow-x:hidden;
     position: relative;
+    justify-content: space-around;
 }

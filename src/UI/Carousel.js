@@ -25,12 +25,12 @@ let valueTargetChange = ""; // valeur utiliser pour savoir si on change la class
 
     function slideDroite(event){
         let value = event.target.dataset; //objet du bouton
-        let screenSize = window.screen.width;
+        let screenSize = window.innerWidth;
         let card = document.querySelector(".ShoppingCard_card_container__Qch04");
         let dimension = card.clientWidth;
         let cardWidth = Number(value.length) * (dimension + 20);
-        let maximumValue = screenSize - cardWidth ;
-
+        let maximumValue = screenSize - cardWidth;
+        console.log(screenSize);
         if(valueTargetChange !== value.container || valueTargetChange === ""){ //si on change de carousel
             valueCarousel = 0;
         }
@@ -46,7 +46,9 @@ let valueTargetChange = ""; // valeur utiliser pour savoir si on change la class
             valueCarousel = Number(value.value);
             containerOffre.style.transform = `translateX(${valueCarousel}px)`;
         }
-
+        console.log(dimension);
+        console.log(maximumValue);
+        console.log(value.value);
     }
 
 export{slideGauche, slideDroite};

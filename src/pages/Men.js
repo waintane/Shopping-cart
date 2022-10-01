@@ -1,7 +1,7 @@
 import classes from "./Men.module.css";
-import ShoppingCard from "../components/ShoppingCard";
 import CardList from "../components/CardList";
 import data from "../DataBase/Data.json";
+
 
 function Men(){
     let dataHomme = data.filter(data => data.genre === "homme");
