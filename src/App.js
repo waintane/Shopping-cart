@@ -6,6 +6,7 @@ import Accueil from "./pages/Accueil";
 import Men from "./pages/Men"
 import Women from "./pages/Women"
 import "./App.css";
+import Footer from "./components/Footer";
 
 function App() {
     var scrollEventHandler = function()
@@ -29,6 +30,9 @@ function App() {
           </Route>
         </Routes>
       </main>
+      <footer>
+        <Footer></Footer>
+      </footer>
     </div>
   );
 }

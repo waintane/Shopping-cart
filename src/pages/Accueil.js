@@ -13,9 +13,9 @@ function Accueil(){
 
     return(
         <div className={classes.main_accueil}>
-            <div>
+            <div className={classes.sous_categorie}>
             <h2>Meilleur vendeur pour homme</h2>
-            <Link to="/men-page"><button>Voir plus</button></Link>
+            <Link to="/men-page"><div>Voir plus</div></Link>
             </div>
             <div className={classes.men_best_seller_container}>
                 <div className={classes.container_carousel}>
@@ -41,9 +41,9 @@ function Accueil(){
                 </div>
             </div>
 
-            <div>
+            <div className={classes.sous_categorie}>
             <h2>Meilleur vendeur pour femme</h2>
-            <Link to="/women-page"><button>Voir plus</button></Link>
+            <Link to="/women-page"><div>Voir plus</div></Link>
             </div>
             <div className={classes.men_best_seller_container}>
                 <div className={classes.container_carousel}>

@@ -16,40 +16,56 @@ body::-webkit-scrollbar {
 }
   
 body::-webkit-scrollbar-track {
-background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
 }
   
 body::-webkit-scrollbar-thumb {
-background-color: rgb(139, 139, 139);
-border: 3px solid rgb(139, 139, 139);  
+    background-color: rgb(139, 139, 139);
+    border: 3px solid rgb(139, 139, 139);  
 }
 .container_carousel button{
-color: white;
-background-color: black;
-height: 30px;
-width: 30px;
-border-radius: 100%;
-position:absolute;
-transform: translateY(clamp(150px, 10vw, 350px));
-z-index: 5;
+    color: white;
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    position:absolute;
+    transform: translateY(clamp(150px, 10vw, 350px));
+    z-index: 5;
 }
 .container_carousel button:nth-of-type(2){
-height: 30px;
-position:absolute;
-left: 92%;
-transform: translateY(clamp(150px, 10vw, 350px));
-z-index: 5;
+    height: 30px;
+    position:absolute;
+    left: 92%;
+    transform: translateY(clamp(150px, 10vw, 350px));
+    z-index: 5;
 }
 .container_carousel div{
     transition: 0.5s;
 }
-
+.sous_categorie{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    height: 70px;
+    border-bottom: 1px solid grey;
+}
+.sous_categorie div{
+    margin-top: 20px;
+    text-align: center;
+    width: 100px;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    padding: 7px 20px;
+}
 
 
 
 @media only screen and (min-width: 800px){
     .container_carousel button:nth-of-type(2){
-      left: 95vw;
+        left: 95vw;
     }
     .container_carousel button{
         color: white;
@@ -60,12 +76,22 @@ z-index: 5;
         position:absolute;
         transform: translateY(clamp(150px, 10vw, 350px));
         z-index: 5;
-        }
-        .container_carousel button:nth-of-type(2){
+    }
+    .container_carousel button:nth-of-type(2){
         height: 50px;
         position:absolute;
         left: 95%;
         transform: translateY(clamp(150px, 10vw, 350px));
         z-index: 5;
-        }
+    }
+    .sous_categorie{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 4vw;
+    }
+    .sous_categorie div{
+        margin-top: 0px;
+        width: 8vw;
+    }
 }
