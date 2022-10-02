@@ -3,8 +3,10 @@
     height: auto;
 }
 .card_container{
+    background-color: white;
     width: clamp(250px, 20vw, 400px);
     margin-right: 20px;
+    margin-top: 30px;
     overflow-x: hidden;
     overflow-y: hidden;
     position: static;

@@ -7,10 +7,6 @@
     overflow-y:hidden;
     position: relative;
 }
-.main_accueil{
-    margin: 0px auto;
-    width: 95%;
-}
 body::-webkit-scrollbar {
     width: 8px;             
 }
