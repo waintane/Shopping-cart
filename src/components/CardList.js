@@ -6,6 +6,7 @@ function CardList(props){
     return(
         <div className={classes.card_list_container}>
             {props.dataFiltre.map(data => <ShoppingCard
+            id={data.id}
             key={data.id}
             img={data.img}
             name={data.name}

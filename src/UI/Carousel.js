@@ -30,7 +30,6 @@ let valueTargetChange = ""; // valeur utiliser pour savoir si on change la class
         let dimension = card.clientWidth;
         let cardWidth = Number(value.length) * (dimension + 20);
         let maximumValue = screenSize - cardWidth;
-        console.log(screenSize);
         if(valueTargetChange !== value.container || valueTargetChange === ""){ //si on change de carousel
             valueCarousel = 0;
         }
@@ -46,9 +45,6 @@ let valueTargetChange = ""; // valeur utiliser pour savoir si on change la class
             valueCarousel = Number(value.value);
             containerOffre.style.transform = `translateX(${valueCarousel}px)`;
         }
-        console.log(dimension);
-        console.log(maximumValue);
-        console.log(value.value);
     }
 
 export{slideGauche, slideDroite};

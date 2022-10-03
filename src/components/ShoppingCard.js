@@ -1,4 +1,5 @@
 import classes from "./ShoppingCard.module.css";
+import {ajoutePanier} from "../UI/CartPage"
 
 function ShoppingCard(props){
     return(
@@ -7,7 +8,7 @@ function ShoppingCard(props){
             <p className={classes.item_name}>{props.name}</p>
             <div>
                 <p className={classes.item_price}>${props.price}</p>
-                <div className={classes.add_to_cart}>Ajouter</div>
+                <div className={classes.add_to_cart} onClick={() => ajoutePanier(props.price, props.name)}>Ajouter</div>
             </div>
         </div>
     );
