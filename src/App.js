@@ -26,7 +26,7 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path="/" element={<Accueil/>}>
+          <Route path="/Shopping-cart/" element={<Accueil/>}>
           </Route>
           <Route path="/Men-page" element={<Men/>}>
           </Route>

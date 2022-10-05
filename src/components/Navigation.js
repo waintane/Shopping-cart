@@ -44,7 +44,7 @@ function Navigation(){
             <div className={classes.header_fixed}>
                 <div className={classes.head_mobile}>
                     <div onClick={deployMenu} className={classes.burger}><svg width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#000000"><path d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"></path></svg></div>
-                    <Link to="/" onClick={() => refreshPage(prev => "Accueil")}><h1>Cubs</h1></Link>
+                    <Link to="/Shopping-cart/" onClick={() => refreshPage(prev => "Accueil")}><h1>Cubs</h1></Link>
 
                     <div className={classes.shopping_cart} onClick={showCart}>
                         <svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="#000000"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
@@ -54,7 +54,7 @@ function Navigation(){
                 <nav className={classes.menu}>
                     <ul>
                         <li>
-                            <Link to="/" onClick={() => refreshPage(prev => "Accueil")}>Accueil</Link>
+                            <Link to="/Shopping-cart/" onClick={() => refreshPage(prev => "Accueil")}>Accueil</Link>
                         </li>
                         <li>
                             <Link to="/Men-page" onClick={() => refreshPage(prev => "Homme")}>Homme</Link>
