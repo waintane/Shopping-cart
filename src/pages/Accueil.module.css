@@ -22,17 +22,16 @@ body::-webkit-scrollbar-thumb {
 .container_carousel button{
     color: white;
     background-color: black;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     border-radius: 100%;
     position:absolute;
     transform: translateY(clamp(150px, 10vw, 350px));
     z-index: 5;
 }
 .container_carousel button:nth-of-type(2){
-    height: 30px;
     position:absolute;
-    left: 92%;
+    left: 88%;
     transform: translateY(clamp(150px, 10vw, 350px));
     z-index: 5;
 }
