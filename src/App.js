@@ -5,8 +5,10 @@ import Navigation from "./components/Navigation";
 import Accueil from "./pages/Accueil";
 import Men from "./pages/Men"
 import Women from "./pages/Women"
-import "./App.css";
 import Footer from "./components/Footer";
+
+
+import "./App.css";
 
 function App() {
     var scrollEventHandler = function()
@@ -18,7 +20,9 @@ function App() {
   return (
     <div className="app">
       <header>
+
         <Navigation></Navigation>
+        
       </header>
       <main>
         <Routes>

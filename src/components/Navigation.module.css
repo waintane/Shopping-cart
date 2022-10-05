@@ -84,6 +84,7 @@ a{
     
 }
 
+
 .menu li:active{
     border-bottom: 1px solid black;
 }
@@ -120,6 +121,7 @@ a{
         width: 100%;
     }
     .shopping_cart {
+        cursor: pointer;
         position: absolute;
         right: 0;
     } 

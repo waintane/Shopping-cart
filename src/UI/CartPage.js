@@ -1,5 +1,6 @@
 import classes from "./CartPage.module.css";
 import React, {useState} from "react";
+import react from "react";
 
 let listePanier = [];
 let totalPrice = 0;
@@ -7,6 +8,7 @@ let numberObjet = -1;
 
 function CartPage(props){
 
+    let nombreItem = 0;
     const [display, displayRefresh] = useState();
 
     function retrait(value,price){
@@ -18,13 +20,16 @@ function CartPage(props){
 
     return(
         <div className={classes.shopping_cart}>
+            <div className={classes.overall_panier}>
+            <h3>Vous avez {listePanier.length} item{listePanier.length > 1 ? "s" : ""} dans le panier</h3>
             {listePanier.map( value =>
             <div key={value.key} className={classes.content_panier}> 
                 <p> {value.name} </p>
-                <p> {value.price} </p>
-                <button onClick={() => retrait(value.key , value.price)}>x</button>
+                <p> ${value.price} </p>
+                <div className={classes.button_panier} onClick={() => retrait(value.key , value.price)}>x</div>
             </div>)}
-            <p> ${Math.round(totalPrice * 100) / 100} </p>
+            <p className={classes.prix_total}>Prix total : ${Math.round(totalPrice * 100) / 100} </p>
+            </div>
         </div>
     )
 }
@@ -38,7 +43,6 @@ function ajoutePanier(price, name){
     }
     totalPrice += price;
     listePanier.push(objet);
-    CartPage();
 }
 
 

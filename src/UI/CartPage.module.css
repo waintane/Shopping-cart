@@ -1,6 +1,6 @@
 .shopping_cart{
-    width: 400px;
-    height: 700px;
+    width: clamp(360px, 20vw, 500px);
+    height: 95vh;
     background-color: white;
     position: fixed;
     z-index: 105;
@@ -8,6 +8,18 @@
     right: 0px;
 }
 .content_panier{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 0.3fr;
+    padding-bottom: 10px;
+    padding-top: 2px;
+    border-bottom: 1px solid grey;
+}
+.overall_panier{
+    margin-left: 10px;
+}
+.prix_total{
+    margin-top: 50px;
+}
+.button_panier{
+    cursor: pointer;
 }

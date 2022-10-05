@@ -6,10 +6,13 @@ import CartPage from "../UI/CartPage";
 
 /* use state sur le bouton burger */
 
+
+
 function Navigation(){
 
     const [page, refreshPage] = useState();
     const [cart, displayCart] = useState(false);
+    
 
     let menuState = false;
     function deployMenu(){  
@@ -36,7 +39,6 @@ function Navigation(){
         }
     }
 
-
     return(
         <div className={classes.header}>
             <div className={classes.header_fixed}>
@@ -45,7 +47,7 @@ function Navigation(){
                     <Link to="/" onClick={() => refreshPage(prev => "Accueil")}><h1>Cubs</h1></Link>
 
                     <div className={classes.shopping_cart} onClick={showCart}>
-                        <svg width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="#000000"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                        <svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="#000000"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
                     </div>
                     
                 </div>
@@ -74,4 +76,7 @@ function Navigation(){
         
     )
 }
+
+
+
 export default Navigation;
